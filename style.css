@@ -106,3 +106,81 @@ canvas#background-animation {
     z-index: 1;
     pointer-events: none;
 }
+
+/* Global styles (ya definidos en la página principal) */
+
+/* Header de servicios */
+.services-header {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+    overflow: hidden;
+}
+
+.services-header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #00d8ff;
+    margin-bottom: 20px;
+}
+
+.services-header p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #bbbbbb;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Bloques de servicios */
+.services-block {
+    padding: 60px 20px;
+    background-color: #121212;
+    text-align: center;
+    color: #ffffff;
+}
+
+.alt-block {
+    background-color: #0d0d0d;
+}
+
+.services-block h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #00d8ff;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    color: #00d8ff;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #bbbbbb;
+}
